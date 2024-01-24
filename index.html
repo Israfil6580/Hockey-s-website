@@ -47,22 +47,36 @@
 <body class="font-manrope">
 
     <header class="mx-5">
-        <div class="container mx-auto">
+        <div class="container mx-auto lg:relative">
+            <div class="border-b border-dashed lg:pb-24 pb-10">
 
-            <!-- navbar start here -->
-            <div class="navbar bg-base-100 mt-5 mb-5 px-0 lg:mt-8 lg:mb-8">
-                <div class="navbar-start">
-                    <!-- responsive navbar -->
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                <!-- navbar start here -->
+                <div class="navbar bg-base-100 mt-5 mb-5 px-0 lg:mt-8 lg:mb-8">
+                    <div class="navbar-start">
+                        <!-- responsive navbar -->
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a class="text-[#424247] text-base">Home</a></li>
+                                <li><a class="text-[#424247] text-base">About</a></li>
+                                <li><a class="text-[#424247] text-base">Pages</a></li>
+                                <li><a class="text-[#424247] text-base">Blog</a></li>
+                                <li><a class="text-[#424247] text-base">Contact</a></li>
+                            </ul>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <!-- responsive navbar end here -->
+                        <a class="btn btn-ghost text-navy-blue text-2xl lg:text-4xl font-extrabold gap-0 p-0">Hockey<span
+                                class="text-orange">’</span>s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
                             <li><a class="text-[#424247] text-base">Home</a></li>
                             <li><a class="text-[#424247] text-base">About</a></li>
                             <li><a class="text-[#424247] text-base">Pages</a></li>
@@ -70,64 +84,60 @@
                             <li><a class="text-[#424247] text-base">Contact</a></li>
                         </ul>
                     </div>
-                    <!-- responsive navbar end here -->
-                    <a class="btn btn-ghost text-navy-blue text-2xl lg:text-4xl font-extrabold gap-0 p-0">Hockey<span
-                            class="text-orange">’</span>s</a>
+                    <div class="navbar-end">
+                        <i class="ri-search-line text-2xl mr-6 cursor-pointer text-[#89898B] hidden lg:block"></i>
+                        <a
+                            class="btn text-lg lg:text-xl text-white font-bold bg-orange border-orange lg:hover:text-navy-blue">Get
+                            Ticket</a>
+                    </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="text-[#424247] text-base">Home</a></li>
-                        <li><a class="text-[#424247] text-base">About</a></li>
-                        <li><a class="text-[#424247] text-base">Pages</a></li>
-                        <li><a class="text-[#424247] text-base">Blog</a></li>
-                        <li><a class="text-[#424247] text-base">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <i class="ri-search-line text-2xl mr-6 cursor-pointer text-[#89898B] hidden lg:block"></i>
-                    <a
-                        class="btn text-lg lg:text-xl text-white font-bold bg-orange border-orange lg:hover:text-navy-blue">Get
-                        Ticket</a>
-                </div>
-            </div>
-            <!-- navbar end -->
+                <!-- navbar end -->
 
-            <!-- banner start -->
-            <div class="carousel w-full lg:pb-24 pb-10 border-b border-dashed">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
-                    <div class="absolute flex gap-3 left-1/2 bottom-3 transform -translate-x-1/2 lg:left-20">
-                        <a href="#slide4" class="btn text-white bg-black border-black btn-circle">❮</a>
-                        <a href="#slide2" class="btn text-white bg-black border-black btn-circle">❯</a>
+                <!-- banner start -->
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./Images/1.png" class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
+                        <div class="absolute flex gap-3 left-1/2 bottom-5 transform -translate-x-1/2 lg:left-20">
+                            <a href="#slide4" class="btn text-white bg-black border-black btn-circle">❮</a>
+                            <a href="#slide2" class="btn text-white bg-black border-black btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./Images/banner-2.jpg"
+                            class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
+                        <div class="absolute flex gap-3 left-1/2 bottom-5 transform -translate-x-1/2 lg:left-20">
+                            <a href="#slide1" class="btn text-white bg-black border-black btn-circle">❮</a>
+                            <a href="#slide3" class="btn text-white bg-black border-black btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="./Images/banner-3.jpg"
+                            class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
+                        <div class="absolute flex gap-3 left-1/2 bottom-5 transform -translate-x-1/2 lg:left-20">
+                            <a href="#slide2" class="btn text-white bg-black border-black btn-circle">❮</a>
+                            <a href="#slide4" class="btn text-white bg-black border-black btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="./Images/banner-4.jpg"
+                            class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
+                        <div class="absolute flex gap-3 left-1/2 bottom-5 transform -translate-x-1/2 lg:left-20">
+                            <a href="#slide3" class="btn text-white bg-black border-black btn-circle">❮</a>
+                            <a href="#slide1" class="btn text-white bg-black border-black btn-circle">❯</a>
+                        </div>
                     </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="./Images/banner-2.jpg"
-                        class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
-                    <div class="absolute flex gap-3 left-1/2 bottom-3 transform -translate-x-1/2 lg:left-20">
-                        <a href="#slide1" class="btn text-white bg-black border-black btn-circle">❮</a>
-                        <a href="#slide3" class="btn text-white bg-black border-black btn-circle">❯</a>
-                    </div>
+                <div
+                    class="bg-black lg:w-1/2 lg:absolute lg:bottom-32 lg:right-7 lg:p-10 p-4 rounded-2xl cursor-pointer">
+                    <h1 class="font-extrabold lg:text-2xl text-lg text-white">Meet all the heroes from the field</h1>
+                    <p
+                        class="font-medium lg:text-base text-sm lg:leading-[26px] leading-[24px] text-[#FFFFFF99] lg:pt-5 pt-2">
+                        Meet our hero, a seasoned veteran on the ice with a wealth of experience that sets them apart.
+                        With an impressive career spanning eight years.</p>
                 </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="./Images/banner-3.jpg"
-                        class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
-                    <div class="absolute flex gap-3 left-1/2 bottom-3 transform -translate-x-1/2 lg:left-20">
-                        <a href="#slide2" class="btn text-white bg-black border-black btn-circle">❮</a>
-                        <a href="#slide4" class="btn text-white bg-black border-black btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" class="carousel-item relative w-full">
-                    <img src="./Images/banner-4.jpg"
-                        class="w-full lg:aspect-auto aspect-video rounded-2xl object-cover" />
-                    <div class="absolute flex gap-3 left-1/2 bottom-3 transform -translate-x-1/2 lg:left-20">
-                        <a href="#slide3" class="btn text-white bg-black border-black btn-circle">❮</a>
-                        <a href="#slide1" class="btn text-white bg-black border-black btn-circle">❯</a>
-                    </div>
-                </div>
+                <!-- banner end -->
+                <!-- banner inner -->
             </div>
-            <!-- banner end -->
-
         </div>
     </header>
 
@@ -140,7 +150,9 @@
                     <h2 class="font-extrabold text-2xl text-navy-blue lg:text-4xl">Professional Hockeys Club</h2>
                     <p
                         class="text-[#0D0D1263] pt-4 lg:pt-6 lg:w-[60%] w-[90%] mx-auto text-sm lg:text-base font-medium lg:font-bold lg:leading-6">
-                        Dive into the heart of the action with our in-depth coverage of professional hockey clubs worldwide. From the thunderous slap shots to the strategic power plays, discover the passion, skill, and stories behind the teams that make the ice come alive. </p>
+                        Dive into the heart of the action with our in-depth coverage of professional hockey clubs
+                        worldwide. From the thunderous slap shots to the strategic power plays, discover the passion,
+                        skill, and stories behind the teams that make the ice come alive. </p>
                 </div>
                 <div class="lg:flex lg:gap-8 lg:py-12 py-6 lg:items-start border-b border-dashed">
                     <div class="flex flex-col items-center justify-center mb-6 lg:w-1/4">
@@ -149,7 +161,9 @@
                             <h1 class="text-navy-blue font-extrabold text-3xl transform -rotate-90">87%</h1>
                         </div>
                         <h2 class="font-bold text-xl text-navy-blue">Prayer Facility</h2>
-                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">our prayer facilities cater to people from various religious backgrounds, fostering an environment of respect and understanding.</p>
+                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">our prayer facilities cater to
+                            people from various religious backgrounds, fostering an environment of respect and
+                            understanding.</p>
                     </div>
                     <div class="flex flex-col items-center justify-center mb-6 lg:w-1/4">
                         <div class="radial-progress text-[#49D293] transform rotate-90 mb-6"
@@ -157,7 +171,8 @@
                             <h1 class="text-navy-blue font-extrabold text-3xl transform -rotate-90">95%</h1>
                         </div>
                         <h2 class="font-bold text-xl text-navy-blue">Experienced Coach</h2>
-                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">In high-pressure situations, the experienced coach's calm demeanor and strategic thinking become invaluable assets. </p>
+                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">In high-pressure situations,
+                            the experienced coach's calm demeanor and strategic thinking become invaluable assets. </p>
                     </div>
                     <div class="flex flex-col items-center justify-center mb-6 lg:w-1/4">
                         <div class="radial-progress text-[#FFB546] transform rotate-90 mb-6"
@@ -165,7 +180,9 @@
                             <h1 class="text-navy-blue font-extrabold text-3xl transform -rotate-90">90%</h1>
                         </div>
                         <h2 class="font-bold text-xl text-navy-blue">Senior Player</h2>
-                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">Senior players in various fields, whether in sports, business, or other professions, play a crucial role in shaping the dynamics.</p>
+                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">Senior players in various
+                            fields, whether in sports, business, or other professions, play a crucial role in shaping
+                            the dynamics.</p>
                     </div>
                     <div class="flex flex-col items-center justify-center mb-6 lg:w-1/4">
                         <div class="radial-progress text-[#4C8DF1] transform rotate-90 mb-6"
@@ -173,7 +190,9 @@
                             <h1 class="text-navy-blue font-extrabold text-3xl transform -rotate-90">80%</h1>
                         </div>
                         <h2 class="font-bold text-xl text-navy-blue">Training Ground</h2>
-                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">A training ground serves as a dedicated space designed for learning, honing skills, and gaining practical experience in various fields.</p>
+                        <p class="mt-4 leading-6 text-[#0D0D1263] text-base text-center">A training ground serves as a
+                            dedicated space designed for learning, honing skills, and gaining practical experience in
+                            various fields.</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +204,9 @@
                     <h2 class="font-extrabold text-2xl text-navy-blue lg:text-4xl">Program Sections</h2>
                     <p
                         class="text-[#0D0D1263] pt-4 lg:pt-6 lg:w-[60%] w-[90%] mx-auto text-sm lg:text-base font-medium lg:font-bold lg:leading-6">
-                        Explore a range of specialized programs crafted by industry experts and thought leaders. These programs cover a spectrum of topics, providing in-depth knowledge and practical skills across various domains.</p>
+                        Explore a range of specialized programs crafted by industry experts and thought leaders. These
+                        programs cover a spectrum of topics, providing in-depth knowledge and practical skills across
+                        various domains.</p>
                 </div>
                 <div class="lg:flex lg:gap-8 lg:py-12 py-6 border-b border-dashed">
                     <div class="grid grid-cols-12 grid-rows-3 lg:grid-rows-none w-full gap-6">
@@ -195,7 +216,9 @@
                             <div class="absolute bg-[#13131880] bottom-0 left-0 h-full w-full rounded-2xl">
                                 <div class="absolute lg:bottom-5 lg:left-5 bottom-0 left-0 text-white lg:p-5 p-5">
                                     <h2 class="lg:text-3xl text-xl font-bold">Junior Program</h2>
-                                    <p class="lg:text-base text-sm lg:mt-4 lg:mb-6 leading-6 lg:pr-8 mt-3 mb-5">Our Junior Program features a variety of interactive and age-appropriate activities that engage children in a playful and educational manner.</p>
+                                    <p class="lg:text-base text-sm lg:mt-4 lg:mb-6 leading-6 lg:pr-8 mt-3 mb-5">Our
+                                        Junior Program features a variety of interactive and age-appropriate activities
+                                        that engage children in a playful and educational manner.</p>
                                     <button
                                         class="btn bg-orange text-white border-orange lg:text-xl text-lg font-bold">Register
                                         Now!</button>
@@ -208,7 +231,9 @@
                             <div class="absolute bg-[#13131880] bottom-0 left-0 h-full w-full rounded-2xl">
                                 <div class="absolute lg:bottom-5 lg:left-5 bottom-0 left-0 text-white lg:p-5 p-5">
                                     <h2 class="lg:text-3xl text-xl font-bold">Teenager Program</h2>
-                                    <p class="lg:text-base text-sm lg:mt-4 lg:mb-6 leading-6 lg:pr-8 mt-3 mb-5">Discover a diverse range of interactive workshops and courses crafted to ignite curiosity and foster a passion for learning</p>
+                                    <p class="lg:text-base text-sm lg:mt-4 lg:mb-6 leading-6 lg:pr-8 mt-3 mb-5">Discover
+                                        a diverse range of interactive workshops and courses crafted to ignite curiosity
+                                        and foster a passion for learning</p>
                                     <button
                                         class="btn bg-orange text-white border-orange lg:text-xl text-lg font-bold">Register
                                         Now!</button>
@@ -224,7 +249,8 @@
                                     <h2 class="lg:text-3xl text-xl font-bold">Professional Program</h2>
                                     <p
                                         class="lg:text-base text-sm lg:mt-4 lg:mb-6 leading-6 lg:pr-8 mt-3 mb-5 lg:w-2/3">
-                                        Immerse yourself in specialized programs led by industry luminaries and subject matter experts, ensuring that you receive cutting-edge insights.</p>
+                                        Immerse yourself in specialized programs led by industry luminaries and subject
+                                        matter experts, ensuring that you receive cutting-edge insights.</p>
                                     <button
                                         class="btn bg-orange text-white border-orange lg:text-xl text-lg font-bold">Register
                                         Now!</button>
@@ -242,7 +268,8 @@
                     <h2 class="font-extrabold text-2xl text-navy-blue lg:text-4xl">Our New Products</h2>
                     <p
                         class="text-[#0D0D1263] pt-4 lg:pt-6 lg:w-[60%] w-[90%] mx-auto text-sm lg:text-base font-medium lg:font-bold lg:leading-6">
-                        We are thrilled to unveil our newest product, a groundbreaking solution designed to elevate our experience. Meticulously crafted with innovation and user satisfaction in mind,</p>
+                        We are thrilled to unveil our newest product, a groundbreaking solution designed to elevate our
+                        experience. Meticulously crafted with innovation and user satisfaction in mind,</p>
                 </div>
                 <div class="grid grid-cols-12 gap-6">
                     <div class="border col-span-full lg:col-span-6 rounded-2xl">
@@ -262,8 +289,10 @@
                                             class="ri-heart-line pr-2"></i>
                                         200</div>
                                 </div>
-                                <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">Winter Soccer Jersey</h2>
-                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality materials, such as fine cotton, wool, leather.</p>
+                                <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">Winter Soccer Jersey
+                                </h2>
+                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality
+                                    materials, such as fine cotton, wool, leather.</p>
                                 <div class="flex lg:justify-between lg:flex-row flex-col">
                                     <h2 class="font-extrabold text-xl lg:text-2xl text-orange leading-7 mb-4">Price -
                                         $22.00</h2>
@@ -316,8 +345,10 @@
                                             class="ri-heart-line pr-2"></i>
                                         200</div>
                                 </div>
-                                <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">Extreme Premium Football</h2>
-                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality materials, such as fine cotton, wool, leather.</p>
+                                <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">Extreme Premium
+                                    Football</h2>
+                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality
+                                    materials, such as fine cotton, wool, leather.</p>
                                 <div class="flex lg:justify-between lg:flex-row flex-col">
                                     <h2 class="font-extrabold text-xl lg:text-2xl text-orange leading-7 mb-4">Price -
                                         $22.00</h2>
@@ -371,7 +402,8 @@
                                         200</div>
                                 </div>
                                 <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">Soccer Cap</h2>
-                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality materials, such as fine cotton, wool, leather.</p>
+                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality
+                                    materials, such as fine cotton, wool, leather.</p>
                                 <div class="flex lg:justify-between lg:flex-row flex-col">
                                     <h2 class="font-extrabold text-xl lg:text-2xl text-orange leading-7 mb-4">Price -
                                         $22.00</h2>
@@ -425,7 +457,8 @@
                                         200</div>
                                 </div>
                                 <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">Soccer Jersy</h2>
-                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality materials, such as fine cotton, wool, leather.</p>
+                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality
+                                    materials, such as fine cotton, wool, leather.</p>
                                 <div class="flex lg:justify-between lg:flex-row flex-col">
                                     <h2 class="font-extrabold text-xl lg:text-2xl text-orange leading-7 mb-4">Price -
                                         $22.00</h2>
@@ -479,7 +512,8 @@
                                         200</div>
                                 </div>
                                 <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">Football Helmet</h2>
-                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality materials, such as fine cotton, wool, leather.</p>
+                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality
+                                    materials, such as fine cotton, wool, leather.</p>
                                 <div class="flex lg:justify-between lg:flex-row flex-col">
                                     <h2 class="font-extrabold text-xl lg:text-2xl text-orange leading-7 mb-4">Price -
                                         $22.00</h2>
@@ -532,8 +566,10 @@
                                             class="ri-heart-line pr-2"></i>
                                         200</div>
                                 </div>
-                                <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">World Cup Football</h2>
-                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality materials, such as fine cotton, wool, leather.</p>
+                                <h2 class="font-extrabold text-xl lg:text-2xl mt-3 text-navy-blue">World Cup Football
+                                </h2>
+                                <p class="mt-3 mb-4 text-[#0D0D1263] font-medium text-base lg:text-lg">high-quality
+                                    materials, such as fine cotton, wool, leather.</p>
                                 <div class="flex lg:justify-between lg:flex-row flex-col">
                                     <h2 class="font-extrabold text-xl lg:text-2xl text-orange leading-7 mb-4">Price -
                                         $22.00</h2>
@@ -579,7 +615,8 @@
                 <h2 class="font-extrabold text-2xl text-navy-blue lg:text-4xl">Clients Question</h2>
                 <p
                     class="text-[#0D0D1263] pt-4 lg:pt-6 lg:w-[60%] w-[90%] mx-auto text-sm lg:text-base font-medium lg:font-bold lg:leading-6">
-                    We regularly update our FAQs to ensure the information is current and reflects any recent changes or improvements to our services. </p>
+                    We regularly update our FAQs to ensure the information is current and reflects any recent changes or
+                    improvements to our services. </p>
             </div>
             <!-- title end -->
             <div class="lg:pb-24 pb-10 border-b border-dashed">
@@ -595,7 +632,9 @@
                                 Our Equipment
                             </div>
                             <div class="collapse-content">
-                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment that suits your requirements. Each product page provides detailed specifications, customer reviews, and ordering information for a seamless shopping experience.</p>
+                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment
+                                    that suits your requirements. Each product page provides detailed specifications,
+                                    customer reviews, and ordering information for a seamless shopping experience.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-transparent border-b rounded-none">
@@ -604,7 +643,9 @@
                                 Hockey Training
                             </div>
                             <div class="collapse-content">
-                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment that suits your requirements. Each product page provides detailed specifications, customer reviews, and ordering information for a seamless shopping experience.</p>
+                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment
+                                    that suits your requirements. Each product page provides detailed specifications,
+                                    customer reviews, and ordering information for a seamless shopping experience.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-transparent border-b rounded-none">
@@ -613,7 +654,9 @@
                                 Private Lessons
                             </div>
                             <div class="collapse-content">
-                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment that suits your requirements. Each product page provides detailed specifications, customer reviews, and ordering information for a seamless shopping experience.</p>
+                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment
+                                    that suits your requirements. Each product page provides detailed specifications,
+                                    customer reviews, and ordering information for a seamless shopping experience.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-transparent border-b rounded-none">
@@ -622,7 +665,9 @@
                                 Ski Touring
                             </div>
                             <div class="collapse-content">
-                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment that suits your requirements. Each product page provides detailed specifications, customer reviews, and ordering information for a seamless shopping experience.</p>
+                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment
+                                    that suits your requirements. Each product page provides detailed specifications,
+                                    customer reviews, and ordering information for a seamless shopping experience.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-transparent border-b rounded-none">
@@ -631,7 +676,9 @@
                                 Booking
                             </div>
                             <div class="collapse-content">
-                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment that suits your requirements. Each product page provides detailed specifications, customer reviews, and ordering information for a seamless shopping experience.</p>
+                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment
+                                    that suits your requirements. Each product page provides detailed specifications,
+                                    customer reviews, and ordering information for a seamless shopping experience.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-transparent border-b rounded-none">
@@ -640,7 +687,9 @@
                                 Pricings
                             </div>
                             <div class="collapse-content">
-                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment that suits your requirements. Each product page provides detailed specifications, customer reviews, and ordering information for a seamless shopping experience.</p>
+                                <p class="text-[#0D0D1263]">Browse our user-friendly categories to find the equipment
+                                    that suits your requirements. Each product page provides detailed specifications,
+                                    customer reviews, and ordering information for a seamless shopping experience.</p>
                             </div>
                         </div>
                     </div>
@@ -653,7 +702,8 @@
                 <h2 class="font-extrabold text-2xl text-navy-blue lg:text-4xl">Get In Touch</h2>
                 <p
                     class="text-[#0D0D1263] pt-4 lg:pt-6 lg:w-[60%] w-[90%] mx-auto text-sm lg:text-base font-medium lg:font-bold lg:leading-6">
-                    We value open communication and are eager to hear from you. Whether you have a question, feedback, or a potential collaboration in mind, getting in touch is easy and welcomed.</p>
+                    We value open communication and are eager to hear from you. Whether you have a question, feedback,
+                    or a potential collaboration in mind, getting in touch is easy and welcomed.</p>
             </div>
             <!-- title end -->
             <div class="lg:pb-24 pb-10">
@@ -724,10 +774,10 @@
                 </div>
                 <!-- title end -->
                 <div class="flex justify-center gap-6">
-                    <a><i class="ri-linkedin-box-fill text-4xl"></i></a>
-                    <a><i class="ri-twitter-fill text-4xl"></i></a>
-                    <a><i class="ri-instagram-line text-4xl"></i></a>
-                    <a><i class="ri-github-fill text-4xl"></i></a>
+                    <a class="cursor-pointer"><i class="ri-linkedin-box-fill text-4xl"></i></a>
+                    <a class="cursor-pointer"><i class="ri-twitter-fill text-4xl"></i></a>
+                    <a class="cursor-pointer"><i class="ri-instagram-line text-4xl"></i></a>
+                    <a class="cursor-pointer"><i class="ri-github-fill text-4xl"></i></a>
                 </div>
             </div>
             <!-- social media section end -->
@@ -736,38 +786,52 @@
     </main>
 
     <div class="bg-navy-blue">
-        <footer class="footer container mx-auto lg:py-24 p-5 text-[#FFFFFF99]">
-            <aside>
-                <h1 class="text-3xl font-extrabold text-white">Get in touch</h1>
-                <p class="font-medium leading-6 lg:w-[448px] lg:mt-6">Dit amet consectetur. Condimentum adipiscing
-                    aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                <ul class="flex flex-col gap-4 lg:mt-6">
+        <footer class="flex lg:flex-row flex-col container mx-auto lg:py-24 p-5 gap-12 text-[#FFFFFF99]">
+            <div class="lg:w-[40%] w-full lg:text-left text-center">
+                <h1 class="text-3xl font-extrabold text-white mb-3">Get in touch</h1>
+                <p class="font-medium leading-6 lg:w-[448px] lg:mt-6">Feel free to get in touch if you have any
+                    questions.</p>
+                <ul class="flex flex-col lg:gap-4 lg:mt-6 lg:items-start items-center">
                     <li><a class="text-[#FFFFFFCC] font-medium flex items-center gap-4" href="#"><i
                                 class="ri-mail-line text-orange text-2xl"></i> hockeys@support.com</a></li>
                     <li><a class="text-[#FFFFFFCC] font-medium flex items-center gap-4" href="#"><i
                                 class="ri-phone-line text-orange text-2xl"></i> (+62) 123-321-543</a></li>
                 </ul>
-            </aside>
-
-            <div>
-                <header class="font-bold text-[18px] text-white">Company</header>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
             </div>
-            <div>
-                <header class="font-bold text-[18px] text-white">Support</header>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </div>
-            <div>
-                <header class="font-bold text-[18px] text-white">Services</header>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
+            <div class="flex w-full flex-wrap justify-center items-start">
+                <div
+                    class="lg:w-1/3 w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-4">
+                    <h1 class="font-bold text-[18px] text-white">Company</h1>
+                    <ul class="list-none">
+                        <li><a class="link link-hover">About us</a></li>
+                        <li><a class="link link-hover">Leadership</a></li>
+                        <li><a class="link link-hover">Careers</a></li>
+                        <li><a class="link link-hover">News & Article</a></li>
+                        <li><a class="link link-hover">Legal Notice</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="lg:w-1/3 w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-4">
+                    <h1 class="font-bold text-[18px] text-white">Support</h1>
+                    <ul class="list-none">
+                        <li><a class="link link-hover">Help Center</a></li>
+                        <li><a class="link link-hover">FAQ</a></li>
+                        <li><a class="link link-hover">Ticket Support</a></li>
+                        <li><a class="link link-hover">Social Media</a></li>
+                        <li><a class="link link-hover">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="lg:w-1/3 w-1/2 flex flex-col justify-center items-center lg:items-start lg:text-left text-center lg:p-0 p-8 gap-4">
+                    <h1 class="font-bold text-[18px] text-white">Services</h1>
+                    <ul class="list-none">
+                        <li><a class="link link-hover">Academy</a></li>
+                        <li><a class="link link-hover">Group Lesson</a></li>
+                        <li><a class="link link-hover">Private Lesson</a></li>
+                        <li><a class="link link-hover">Hockey's for Kids</a></li>
+                        <li><a class="link link-hover">Hockey's for Adult</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>
